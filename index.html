@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+    <nav class="p-3 flex bg-white justify-between items-center">
+        <a href="#" id="brand" class="flex gap-2 items-center flex-1">
+            <img class="object-cover max-h-12 max-w-12" src="photos/asset 0.png">
+            <span class="text-lg font-medium font-sans">ToDesktop</span>
+        </a>
+        <div id="nav-menu " class="hidden lg:flex gap-12">
+            <a href="#" class="font-medium hover:text-blue-600">Pricing</a>
+            <a href="#" class="font-medium hover:text-blue-600">Docs</a>
+            <a href="#" class="font-medium hover:text-blue-600">Changelog</a>
+            <a href="#" class="font-medium hover:text-blue-600">Blogs</a>
+            <a href="#" class="font-medium hover:text-blue-600">Login</a>
+        </div>
+        <div class="hidden lg:flex flex-1 justify-end">
+            <button
+                class="hidden lg:flex gap-2 items-center font-medium border border-gray-400 px-6 py-2 rounded-lg hover:border-gray-600">
+                <img src="photos/asset 1.svg">
+                Electron Developer
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-gray-600"></i>
+        </button>
+        <div id="nav-dialog" class="hidden fixed z-10 md:hidden  inset-0 bg-white p-3">
+            <div id="nav-bar" class="flex justify-between">
+                <a href="#" id="brand" class="flex gap-2 items-center">
+                    <img class="object-cover max-h-12 max-w-12" src="photos/asset 0.png">
+                    <span class="text-lg font-medium font-sans">ToDesktop</span>
+                </a>
+                <button class="p-2 md:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-600"></i>
+                </button>
+            </div>
+            <div class="mt-6">
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Pricing</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Docs</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Changelog</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Blogs</a>
+                <a href="#" class="font-medium m-3 p-3 hover:bg-gray-50 block rounded-lg">Login</a>
+            </div>
+
+            <div class="h-[1px] bg-gray-300">
+                <button class="mt-6 w-full flex gap-2 items-center px-6 py-6 font-medium rounded-lg hover:bg-gray-50">
+                    <img src="photos/asset 1.svg">
+                    Electron Developer
+                </button>
+            </div>
+
+        </div>
+    </nav>
+    <!-- Main -->
+    <main>
+        <div id="hero" class="min-h-screen bg-gradient-to-b from-purple-50 via-orange-50 to-transparent">
+            <div id="hero-container"
+                class="max-w-4xl mx-auto px-6 pt-6 pb-32 flex flex-col sm:items-center sm:text-center sm:pt-12">
+                <div id="version-text"
+                    class="flex items-center my-6 gap-2 border
+             border-yellow-300 bg-yellow-50 to-transparent rounded-lg px-3 py-1 w-fit shadow-md hover:shadow-lg hover:-translate-1 transition group">
+                    <div class="w-2 h-2 bg-yellow-400 rounded-full border border-yellow-600"> </div>
+                    <p class="font-medium text-yellow-600">v0.21.1: <span class="text-yellow-800">Find-in-page bug
+                            fixes</span></p>
+                    <i class="fa-solid fa-arrow-right text-yellow-600 group-hover:translate-x-1 duration-300"></i>
+                </div>
+                <div id="hero-features" class="hidden sm:flex gap-8 my-6">
+                    <div class="flex justify-center gap-2 items-center text-gray-500">
+                        <i class="fa-regular fa-file-code text-sm"></i>
+                        <p>Code Optional</p>
+                    </div>
+                    <div class="flex justify-center gap-2 items-center text-gray-500">
+                        <i class="fa-regular fa-file-code text-sm"></i>
+                        <p>Drag & drop builder</p>
+                    </div>
+                    <div class="flex justify-center gap-2 items-center text-gray-500">
+                        <i class="fa-regular fa-file-code text-sm"></i>
+                        <p>Windows, Mac, Linux</p>
+                    </div>
+                </div>
+                <h1 class="text-4xl leading-snug font-semibold mt-4 sm:text-6xl">Web app to desktop app in minutes</h1>
+                <p class="text-xl mt-4 sm:text-2xl sm:mt-8 font-medium sm:leading-normal text-gray-800">Take your web
+                    app codebase and transform it into a cross platform desktop app with native functionality.</p>
+                <div id="button-container" class="mt-12 flex flex-col gap-4 sm:flex-row">
+                    <button
+                        class="px-8 py-3 font-semibold rounded-lg text-white bg-blue-700 shadom-sm hover:opacity-90">Download
+                        now</button>
+                    <button
+                        class="px-8 py-3 font-semibold rounded-lg text-black bg-white border border-gray-400 hover:border-gray-800">Read
+                        Docs</button>
+                </div>
+
+            </div>
+            <div id="companies-container">
+                <div id="companies-tittle" class="flex justify-center items-center gap-2">
+                    <img class="translate-y-2" src="photos/asset 2.svg">
+                    <span class="font-medium">APPS POWERED BY TODESKTOP</span>
+                    <img class="-scale-x-100 translate-y-2" src="photos/asset 2.svg">
+                </div>
+                <div id="companies-lines-group">
+                    <div id="line1">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-[1000px]"></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>
