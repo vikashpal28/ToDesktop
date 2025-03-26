@@ -44,4 +44,5 @@ const line4 = document.getElementById('line4');
 setupIntersectionObserver(line1, true, 0.15);
 setupIntersectionObserver(line2, false, 0.15);
 setupIntersectionObserver(line3, true, 0.15);
+setupIntersectionObserver(line4,true,0.8);
 
